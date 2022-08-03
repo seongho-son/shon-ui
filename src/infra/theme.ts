@@ -1,3 +1,14 @@
+const color = {
+  white1: '#ffffff',
+  white2: '#fefefe',
+  black1: '#141414',
+  black2: '#444444',
+  gray1: '#888888',
+  gray2: '#AAAAAA',
+  gray3: '#D9D9D9',
+  gray4: '#E4E4E4',
+}
+
 const fontSize = {
   h1: '36px',
   h2: '30px',
@@ -19,25 +30,26 @@ const deviceSize = {
   desktop: '(min-width: 1080px)',
 }
 
-const color = {
-  primary: '#24D59E',
-  secondary: '#1F8FF0',
-  alert: '#FF5252',
-  black1: '#141414',
-  black2: '#444444',
-  gray1: '#888888',
-  gray2: '#AAAAAA',
-  gray3: '#E4E4E4',
-  gray4: '#D9D9D9',
-  white1: '#FFFFFF',
-  white2: '#FEFEFE',
+const btnColor = {
+  default: '#D5D5D5',
+  primary: '#1976d2',
+  secondary: '#dc004d',
+  disabled: '#E0E0E0',
+}
+
+const btnSize = {
+  small: '4px 10px',
+  medium: '6px 16px',
+  large: '8px 22px',
 }
 
 export const theme = {
+  color,
   fontSize,
   fontWeight,
   deviceSize,
-  color,
+  btnColor,
+  btnSize,
 }
 
 export type ThemeType = typeof theme
