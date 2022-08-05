@@ -7,6 +7,10 @@ const color = {
   gray2: '#AAAAAA',
   gray3: '#D9D9D9',
   gray4: '#E4E4E4',
+  default: '#D5D5D5',
+  primary: '#1976d2',
+  secondary: '#dc004d',
+  disabled: '#E0E0E0',
 }
 
 const fontSize = {
@@ -30,26 +34,25 @@ const deviceSize = {
   desktop: '(min-width: 1080px)',
 }
 
-const btnColor = {
-  default: '#D5D5D5',
-  primary: '#1976d2',
-  secondary: '#dc004d',
-  disabled: '#E0E0E0',
-}
-
 const btnSize = {
   small: '4px 10px',
   medium: '6px 16px',
   large: '8px 22px',
 }
 
+const ckSize = {
+  small: '15px',
+  medium: '18px',
+  large: '22px',
+} // checkbox
+
 export const theme = {
   color,
   fontSize,
   fontWeight,
   deviceSize,
-  btnColor,
   btnSize,
+  ckSize,
 }
 
 export type ThemeType = typeof theme

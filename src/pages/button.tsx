@@ -1,12 +1,10 @@
 import { Button as ButtonComponent } from 'components/button'
-import { Column, Row } from 'components/layout'
-import { Heading1, SubTitle } from 'components/text'
-import styled from 'styled-components'
+import { Column, ComponentWrapper } from 'components/layout'
+import { SubTitle } from 'components/text'
 
 function Button() {
   return (
     <Column gap={40}>
-      <Heading1>Button</Heading1>
       <Column gap={10}>
         <SubTitle>Default</SubTitle>
         <ComponentWrapper>
@@ -63,11 +61,3 @@ function Button() {
 }
 
 export default Button
-
-const ComponentWrapper = styled(Row)`
-  width: fit-content;
-  gap: 20px;
-  padding: 30px;
-  border: 1px solid ${(p) => p.theme.color.gray4};
-  border-radius: 4px;
-`

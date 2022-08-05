@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Button from 'pages/button'
 import { Side } from 'components/side'
 import styled from 'styled-components'
 import { Row } from 'components/layout'
 import Home from 'pages/home'
+import Button from 'pages/button'
+import Checkbox from 'pages/checkbox'
+import { Section } from 'components/section'
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/button' element={<Button />} />
+            <Route path='/checkbox' element={<Checkbox />} />
           </Routes>
         </Section>
       </BrowserRouter>
@@ -25,8 +28,4 @@ export default App
 
 export const Main = styled(Row)`
   height: 100%;
-`
-
-export const Section = styled.section`
-  padding: 20px;
 `

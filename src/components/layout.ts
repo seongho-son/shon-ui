@@ -11,3 +11,10 @@ export const Column = styled.div<{ gap?: number }>`
   flex-direction: column;
   gap: ${(p) => (p.gap ? p.gap : 0)}px;
 `
+export const ComponentWrapper = styled(Row)`
+  width: fit-content;
+  gap: 20px;
+  padding: 30px;
+  border: 1px solid ${(p) => p.theme.color.gray4};
+  border-radius: 4px;
+`

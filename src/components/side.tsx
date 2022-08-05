@@ -11,6 +11,9 @@ export const Side = () => {
         <Link to='/button'>
           <BaseText className='sub'>Button</BaseText>
         </Link>
+        <Link to='/checkbox'>
+          <BaseText className='sub'>Checkbox</BaseText>
+        </Link>
       </Menu>
     </Main>
   )

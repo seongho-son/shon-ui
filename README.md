@@ -1,1 +1,2 @@
-![button.png](/public/images/button.png)
+![button](/public/images/button.png)
+![checkbox](/public/images/checkbox.png)

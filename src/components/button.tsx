@@ -42,12 +42,12 @@ export const ButtonStyle = styled.button<ButtonProps>`
         ? p.theme.color.gray2
         : p.color === 'default'
         ? p.theme.color.black1
-        : p.theme.btnColor[`${p.color}`]};
+        : p.theme.color[`${p.color}`]};
     border: none;
   }
   &.contained {
     background-color: ${(p) =>
-      p.disabled ? p.theme.btnColor.disabled : p.theme.btnColor[`${p.color}`]};
+      p.disabled ? p.theme.color.disabled : p.theme.color[`${p.color}`]};
     color: ${(p) =>
       p.disabled
         ? p.theme.color.gray2
@@ -61,14 +61,12 @@ export const ButtonStyle = styled.button<ButtonProps>`
     background-color: ${(p) => p.theme.color.white1};
     border: 1px solid
       ${(p) =>
-        p.disabled
-          ? p.theme.btnColor.disabled
-          : p.theme.btnColor[`${p.color}`]};
+        p.disabled ? p.theme.color.disabled : p.theme.color[`${p.color}`]};
     color: ${(p) =>
       p.disabled
         ? p.theme.color.gray2
         : p.color === 'default'
         ? p.theme.color.black1
-        : p.theme.btnColor[`${p.color}`]};
+        : p.theme.color[`${p.color}`]};
   }
 `

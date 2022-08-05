@@ -1,16 +1,15 @@
-import React from 'react'
-
 export type Color = 'default' | 'primary' | 'secondary'
 
 export type Type = 'default' | 'contained' | 'outlined'
 
 export type Size = 'small' | 'medium' | 'large'
 
-export interface Button {
-  children?: React.ReactNode
-  variant?: Type
+export interface Checkbox {
+  label?: string
+  checked?: boolean
   color?: Color
   size?: Size
+  customColor?: string
   disabled?: boolean
-  onClick?: () => void
+  onChange?: () => void
 }
