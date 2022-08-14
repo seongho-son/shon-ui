@@ -1,8 +1,8 @@
 import { Checkbox as CheckboxProps } from 'infra/types/checkbox'
 import React from 'react'
-import { BaseText } from 'components/text'
+import { BaseText } from 'components/styles/text'
 import styled from 'styled-components'
-import { Row } from 'components/layout'
+import { Row } from 'components/styles/layout'
 
 export const Checkbox: React.FC<CheckboxProps> = ({
   label,
@@ -48,13 +48,13 @@ const Desc = styled(BaseText)<CheckboxProps>`
 `
 
 const Image = styled.img<CheckboxProps>`
-  width: ${(p) => p.theme.ckSize[`${p.size}`]};
-  height: ${(p) => p.theme.ckSize[`${p.size}`]};
+  width: ${(p) => p.theme.checkboxSize[`${p.size}`]};
+  height: ${(p) => p.theme.checkboxSize[`${p.size}`]};
 `
 
 const Box = styled.div<CheckboxProps>`
-  width: ${(p) => p.theme.ckSize[`${p.size}`]};
-  height: ${(p) => p.theme.ckSize[`${p.size}`]};
+  width: ${(p) => p.theme.checkboxSize[`${p.size}`]};
+  height: ${(p) => p.theme.checkboxSize[`${p.size}`]};
   background-color: ${(p) =>
     p.checked
       ? p.customColor

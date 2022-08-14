@@ -1,6 +1,6 @@
 import { Button as ButtonComponent } from 'components/button'
-import { Column, ComponentWrapper } from 'components/layout'
-import { SubTitle } from 'components/text'
+import { Column, ComponentWrapper } from 'components/styles/layout'
+import { SubTitle } from 'components/styles/text'
 
 function Button() {
   return (

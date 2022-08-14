@@ -11,6 +11,10 @@ export const Column = styled.div<{ gap?: number }>`
   flex-direction: column;
   gap: ${(p) => (p.gap ? p.gap : 0)}px;
 `
+export const ComponentContainer = styled(Column)`
+  gap: 10px;
+`
+
 export const ComponentWrapper = styled(Row)`
   width: fit-content;
   gap: 20px;

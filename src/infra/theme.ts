@@ -40,11 +40,29 @@ const btnSize = {
   large: '8px 22px',
 }
 
-const ckSize = {
+const checkboxSize = {
   small: '15px',
   medium: '18px',
   large: '22px',
 } // checkbox
+
+const selectSize = {
+  small: '5px',
+  medium: '10px',
+  large: '15px',
+}
+
+const selectWidth = {
+  small: '80px',
+  medium: '100px',
+  large: '120px',
+}
+
+const optionTop = {
+  small: '40px',
+  medium: '50px',
+  large: '60px',
+}
 
 export const theme = {
   color,
@@ -52,7 +70,8 @@ export const theme = {
   fontWeight,
   deviceSize,
   btnSize,
-  ckSize,
+  checkboxSize,
+  selectSize,
+  selectWidth,
+  optionTop,
 }
-
-export type ThemeType = typeof theme

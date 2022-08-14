@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { SubTitle, BaseText } from 'components/text'
-import { Column } from 'components/layout'
+import { SubTitle, BaseText } from 'components/styles/text'
+import { Column } from 'components/styles/layout'
 
 export const Side = () => {
   return (
@@ -13,6 +13,9 @@ export const Side = () => {
         </Link>
         <Link to='/checkbox'>
           <BaseText className='sub'>Checkbox</BaseText>
+        </Link>
+        <Link to='/select'>
+          <BaseText className='sub'>Select</BaseText>
         </Link>
       </Menu>
     </Main>

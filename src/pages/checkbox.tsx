@@ -1,11 +1,15 @@
 import { Checkbox as CheckboxComponent } from 'components/checkbox'
-import { Column, ComponentWrapper } from 'components/layout'
-import { SubTitle } from 'components/text'
+import {
+  Column,
+  ComponentContainer,
+  ComponentWrapper,
+} from 'components/styles/layout'
+import { SubTitle } from 'components/styles/text'
 
 function Checkbox() {
   return (
     <Column gap={40}>
-      <Column gap={10}>
+      <ComponentContainer>
         <SubTitle>Small</SubTitle>
         <ComponentWrapper>
           <CheckboxComponent
@@ -47,8 +51,8 @@ function Checkbox() {
             disabled
           />
         </ComponentWrapper>
-      </Column>
-      <Column gap={10}>
+      </ComponentContainer>
+      <ComponentContainer>
         <SubTitle>Medium</SubTitle>
         <ComponentWrapper>
           <CheckboxComponent color='default' checked={true} label='Default' />
@@ -76,8 +80,8 @@ function Checkbox() {
             disabled
           />
         </ComponentWrapper>
-      </Column>
-      <Column gap={10}>
+      </ComponentContainer>
+      <ComponentContainer>
         <SubTitle>Large</SubTitle>
         <ComponentWrapper>
           <CheckboxComponent
@@ -119,8 +123,8 @@ function Checkbox() {
             disabled
           />
         </ComponentWrapper>
-      </Column>
-      <Column gap={10}>
+      </ComponentContainer>
+      <ComponentContainer>
         <SubTitle>Custom Color</SubTitle>
         <ComponentWrapper>
           <CheckboxComponent
@@ -141,7 +145,7 @@ function Checkbox() {
             size='large'
           />
         </ComponentWrapper>
-      </Column>
+      </ComponentContainer>
     </Column>
   )
 }

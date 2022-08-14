@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 import styled from 'styled-components'
-import { Heading1 } from 'components/text'
+import { Heading1 } from 'components/styles/text'
 
 export const Section = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation()
